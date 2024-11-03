@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+    <title>个人作品集</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <!-- 修改 Hero Section 的背景图片 -->
+    <style>
+    .hero {
+        background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+                    url('https://picsum.photos/1920/1080') center/cover no-repeat;
+    }
+    </style>
+</head>
+<body>
+    <!-- 导航栏 -->
+    <header class="header">
+        <nav class="nav-container">
+            <div class="logo">社会你维哥</div>
+            <div class="nav-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#home">首页</a></li>
+                <li><a href="#about">关于我</a></li>
+                <li><a href="#portfolio">作品集</a></li>
+                <li><a href="#contact">联系方式</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>欢迎来到你维哥的网页</h1>
+            <a href="#about" class="scroll-down">
+                <i class="fas fa-chevron-down"></i>
+            </a>
+        </div>
+    </section>
+
+    <!-- 在 Hero Section 和 Portfolio Section 之间添加 -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">关于我</h2>
+            <div class="about-content">
+                <div class="about-image">
+                    <img src="https://picsum.photos/400/400" alt="个人照片">
+                    <div class="image-frame"></div>
+                </div>
+                <div class="about-text">
+                    <h3>你好，我是 <span class="highlight">社会你维哥</span></h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 在 Hero Section 后面添加以下内容 -->
+    <section id="portfolio" class="portfolio">
+        <div class="container">
+            <h2 class="section-title">我的作品</h2>
+            <div class="portfolio-filter">
+                <button class="filter-btn active" data-filter="all">全部照片</button>
+                <button class="filter-btn" data-filter="daily">日常生活</button>
+                <button class="filter-btn" data-filter="portrait">写真</button>
+                <button class="filter-btn" data-filter="street">街拍</button>
+            </div>
+            <div class="photo-grid">
+                <div class="photo-item" data-category="portrait">
+                    <img src="https://picsum.photos/300/300?random=1" alt="个人照片1" loading="lazy">
+                    <div class="photo-overlay">
+                        <h3>社会你维哥</h3>
+                        <p>生活随</p>
+                    </div>
+                </div>
+                
+                <div class="photo-item" data-category="portrait">
+                    <img src="https://picsum.photos/300/300?random=2" alt="个人照片2" loading="lazy">
+                    <div class="photo-overlay">
+                        <h3>社会你维哥</h3>
+                        <p>日常写真</p>
+                    </div>
+                </div>
+                
+                <div class="photo-item" data-category="portrait">
+                    <img src="https://picsum.photos/300/300?random=3" alt="个人照片3" loading="lazy">
+                    <div class="photo-overlay">
+                        <h3>社会你维哥</h3>
+                        <p>街拍随手拍</p>
+                    </div>
+                </div>
+                
+                <div class="photo-item" data-category="portrait">
+                    <img src="https://picsum.photos/300/300?random=4" alt="个人照片4" loading="lazy">
+                    <div class="photo-overlay">
+                        <h3>社会你维哥</h3>
+                        <p>生活记录</p>
+                    </div>
+                </div>
+                
+                <div class="photo-item" data-category="portrait">
+                    <img src="https://picsum.photos/300/300?random=5" alt="个人照片5" loading="lazy">
+                    <div class="photo-overlay">
+                        <h3>社会你维哥</h3>
+                        <p>日常瞬间</p>
+                    </div>
+                </div>
+                
+                <div class="photo-item" data-category="portrait">
+                    <img src="https://picsum.photos/300/300?random=6" alt="个人照片6" loading="lazy">
+                    <div class="photo-overlay">
+                        <h3>社会你维哥</h3>
+                        <p>精彩时刻</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 在 portfolio section 后添加 contact section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">联系方式</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <p>邮箱：your.email@example.com</p>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fab fa-weixin"></i>
+                        <p>微信：your_wechat_id</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 添加页脚 -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 社会你维哥. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html> 
